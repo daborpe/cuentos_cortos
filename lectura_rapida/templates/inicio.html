@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load compress %}
+
+{% block title%}Inicio{% endblock %}
+
+{% block content %}
+<div class="row">
+	<div class="col-sm-10 col-sm-offset-1">
+		<div class="row">
+			{% for c in cuentos %}
+			<div class="col-sm-3">
+				<p>{{ c.title }}</p>
+				<img src="media/{{c.storyimage}}" alt="{{c.title}}">
+			</div>
+			{% endfor %}	
+		</div>
+	</div>		
+</div>
+{% endblock %}
