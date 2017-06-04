@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load compress %}
+
+{% block title%}Inicio{% endblock %}
+{% block content %}
+<div class="row">
+	<div class="col-md-12 cuento">
+		{% if not cuentos %}
+			<p>No hay cuentos activos.Intenta más tarde</p>
+			<a href="/" class="btn btn-danger">Regresar</a>
+		{% else %}
+			{% for c in cuentos %}
+				<img src="{{ MEDIA_URL }}{{c.storyimage}}" alt="{{c.title}}" class="img-responsive">
+				<h2>{{ c.title }}</h2>
+				<p>{{ c.beginning }}</p>
+				<p>{{ c.middle }}</p>
+				<p>{{ c.end }}</p>
+			{% endfor %}
+		{% endif%}
+		<a href="#" class="btn btn-primary">Finalizar</a>
+	</div>		
+</div>
+{% endblock %}

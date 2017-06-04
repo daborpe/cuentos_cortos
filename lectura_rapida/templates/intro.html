@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load compress %}
+
+{% block title%}Introducción{% endblock %}
+
+{% block content %}
+<div class="title col-md-12 col-sm-12">
+	<h1><img src="{{ STATIC_URL}}img/libro.png" alt="libro">&#32;TEST DE LECTURA RÁPIDA</h1>
+</div>
+<div class="info">
+	<p><b>Bienvenido</b><br>
+	Para saber cuál es tu velocidad de lectura vamos a hacer un test de lectura.
+	Si no has realizado nunca ninguno, el funcionamiento es sencillo.
+	<br>
+	Para ello te mostraremos un texto que tendrás que leer a tu velocidad normal de lectura. Una vez acabado te haré unas preguntas para determinar tu comprensión y te mostrará los resultados.
+	<br>
+	Para empezar pulsa sobre el botón comenzar ahora. Al hacerlo podrás ver el texto y comenzará a contar el tiempo. Una vez acabado de leer el texto, pulsa sobre el botón de parar y te mostraremos las preguntas de comprensión.</p>
+	<a href="{% url 'test' %}" class="btn btn-primary col-xs-12 col-sm-6 col-sm-offset-3 test-button">Comenzar ahora</a>
+</div>
+
+{% endblock %}
