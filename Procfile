@@ -1,1 +1,1 @@
-web: gunicorn test-lectura.wsgi_heroku --log-file -
+web: gunicorn lectura_rapida.wsgi_heroku --log-file -
