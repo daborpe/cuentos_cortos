@@ -17,6 +17,7 @@
     <link href="{{ STATIC_URL }}css/bootstrap-theme.css" rel="stylesheet">
     <link href="{{ STATIC_URL }}css/main.less" rel="stylesheet" type="text/less">
     {% endcompress %}
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 
     <!-- 
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ STATIC_URL }}ico/apple-touch-icon-144-precomposed.png">
@@ -31,6 +32,8 @@
 </head>
 
 <body>
-    {% block content %}{% endblock %}
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
 </body>
 </html>

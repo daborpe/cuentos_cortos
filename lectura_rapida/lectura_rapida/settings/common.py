@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+import dj_database_url
 from unipath import FSPath as Path
 
 BASE_DIR = Path(__file__).absolute().parent.parent.parent
@@ -27,7 +28,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+DATABASES = {
+    'default': dj_database_url.config()
+}
 # Application definition
 
 INSTALLED_APPS = (

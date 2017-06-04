@@ -9,7 +9,8 @@ admin.autodiscover()
 
 urlpatterns = [
     # url(r'^$', 'lectura_rapida.views.home', name='home'),
-    url(r'^$', 'cuentos.views.inicio', name='inicio'),
+    url(r'^$', TemplateView.as_view(template_name='intro.html')),
+    url(r'^test/', 'cuentos.views.test', name='test'),
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^djmanager/', include(admin.site.urls)),

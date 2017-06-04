@@ -1,1 +1,1 @@
-web: gunicorn lectura_rapida.wsgi --log-file -
+web: gunicorn --pythonpath django test-lectura.wsgi_heroku --log-file -
