@@ -26,7 +26,7 @@ SECRET_KEY = '1ozdjq840kb1-qgt-4%jg5!-+#1u#n=20+53m1=$_*i6kjk@)a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['test-lectura.herokuapp.com',]
 
 DATABASES = {
     'default': dj_database_url.config()
