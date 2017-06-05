@@ -1,1 +1,1 @@
-web: web: gunicorn lectura_rapida.wsgi --log-file -
+web: gunicorn lectura_rapida.wsgi --log-file -
