@@ -1,6 +1,6 @@
 blessings==1.6
 bpython==0.14.1
-certifi==2017.4.17
+certifi==2022.12.7
 chardet==3.0.3
 curtsies==0.1.23
 dj-database-url==0.4.2
